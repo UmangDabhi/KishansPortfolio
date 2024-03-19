@@ -1,0 +1,173 @@
+:root {
+    --gradient-color: linear-gradient(to right,
+            red,
+            blue);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: url("../Assets/Laptop.jpg") no-repeat center center;
+    background-size: cover;
+    transition: background-size 0.5s ease;
+    overflow: hidden;
+}
+
+@keyframes zoom {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 150%;
+    }
+}
+
+.mainText {
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    font-size: 2rem;
+    padding: 60px;
+    transition: all 0.5s ease;
+    text-align: center;
+}
+
+.protest-roit-regular,
+.protest-strike-regular,
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@keyframes textAnimation {
+    from {
+        top: 25%;
+        left: 45%;
+        font-size: 2rem;
+    }
+
+    to {
+        top: 150px;
+        font-size: 45px;
+    }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.btn {
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 20%;
+    border: 1px solid blueviolet;
+}
+
+.container {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    width: 55%;
+    height: 50px;
+}
+
+.textWrap {
+    position: absolute;
+    white-space: nowrap;
+    position: absolute;
+    white-space: nowrap;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gradient-text {
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.scroll-up {
+    animation: scrollText 2s ease-out infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateY(60%);
+    }
+
+    40% {
+        transform: translateY(0%);
+    }
+
+    60% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-80%);
+    }
+}
+
+@media (max-width: 768px) {
+
+    @keyframes zoom {
+        from {
+            background-size: 100%;
+            background-size: cover;
+        }
+        
+        to {
+            background-size: 150%;
+            background-size: cover;
+        }
+    }
+
+    .mainText {
+        font-size: 1.2rem;
+        padding: 20px;
+        top: 33%;
+    }
+    div#laptop{
+        animation: 1s ease 0s 1 normal forwards running textAnimation;
+    }
+
+    @keyframes textAnimation {
+        from {
+            top: 33%;
+            left: 45%;
+            font-size: 1.2rem;
+        }
+
+        to {
+            top: 33%;
+            font-size: 1.2rem;
+        }
+    }
+
+    .btn {
+        padding: 4px;
+        font-size: 14px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .container {
+        width: 55%;
+        height: 30px;
+    }
+
+
+}

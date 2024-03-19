@@ -1,0 +1,24 @@
+.btn{
+    display: none;
+}
+@media (max-width: 768px) {
+
+.btn{
+    display: block;
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+    background-color: transparent;
+    border: 2px solid lightblue;
+    color: white;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+    z-index: 5;
+}
+.btn:hover{
+    background-color: lightcyan;
+    border: 1px solid darkblue;
+    color: black;
+    border-radius: 50%;
+}
+}

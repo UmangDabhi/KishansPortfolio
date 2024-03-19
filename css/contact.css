@@ -1,0 +1,98 @@
+body {
+    background: url(../Assets/library.jpg) no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 5px darkslategray;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+    width: 55%;
+    height: 55%;
+    border-radius: 50%;
+}
+
+.about-me-text {
+    background-color: rgba(0, 0, 0, 0.60);
+    display: inline-block;
+    width: 380px;
+}
+
+ul.connected-list {
+    list-style-type: none;
+    padding: 10px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+ul.connected-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+ul.connected-list li::before {
+    content: "";
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+ul.connected-list li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 130%;
+    left: 4px;
+    transform: translateY(-50%);
+    width: 3px;
+    height: calc(100% + 20px);
+    background-color: whitesmoke;
+}
+.fa{
+    color: white;
+    font-size: 1.8rem;
+}
+.fa-linkedin:hover {
+    color: blue;
+}
+
+.fa-instagram:hover {
+    color: magenta;
+}
+
+.fa-phone:hover {
+    color: green;
+}
+
+.fa-envelope:hover {
+    color: #4285F4;
+}
+.quote-text{
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgb(87, 67, 219);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kishan Godhaniya's Portfolio</title>
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/btn.css">
+</head>
+
+<body>
+    <div class="content-container d-flex flex-column justify-content-center align-items-center">
+        <h3 class="align-self-start mx-md-3 mt-3">Curriculum vitae</h3>
+        <main class="container-fluid px-md-5 px-1">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column align-items-center">
+                    <img src="../Assets/kishu.jpg" alt="Kishan Godhaniya Profile pic" class="img-fluid mb-4">
+
+                    <h2>About me</h2>
+                    <p class="about-me-text px-5 mx-md-5 mx-2">Hi, I am Kishan Godhaniya. A passionate graphic
+                        designer. UI/UX
+                        Designer
+                        and an IT Student. Dedicated to creating visually appealing and functional designs. My skills
+                        include
+                        web development, UI/UX design, and more...</p>
+                </div>
+                <div class="col-md-6">
+                    <h2>Education</h2>
+                    <ul class="connected-list">
+                        <li>
+                            <p>Bachelors Of Technology in Information Technology Marwadi University, Rajkot, Gujarat,
+                                India</p>
+                        </li>
+                        <li>
+                            <p>Higher Secondary Education GMC Internation School, Porbandar, Gujarat, India</p>
+                        </li>
+                        <li>
+                            <p>Secondary School Certificate/marticulatoin GMC Internation school, Porbandar, Gujarat,
+                                India</p>
+                        </li>
+                    </ul>
+                    <h2>Skills</h2>
+                    <ul class="connected-list">
+                        <li><span>Graphic Design</span></li>
+                        <li><span>UI/UX Design</span></li>
+                        <li><span>Poster Design</span></li>
+                        <li><span>Web Development</span></li>
+                    </ul>
+                    <h2>Software</h2>
+                    <ul class="connected-list">
+                        <li><span>Figma</span></li>
+                        <li><span>Canva</span></li>
+                        <li><span>Photoshop</span></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+    <button class="btn" onclick="redirectToNextPage()">Next</button>
+    <script src="../Bootstrap/js/bootstrap.js"></script>
+    <script>
+        
+        function redirectToNextPage() {
+            window.location.href = "posters.html";
+        }
+
+        window.addEventListener('keydown', function (event) {
+            if (event.code === 'Space') {
+                redirectToNextPage();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+:root {
+    --pic-count: 7;
+}
+
+body {
+    background: url(../Assets/library.jpg) no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+@keyframes slideUp {
+    from {
+        top: 100%;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+h2,
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+    position: relative;
+    /* Responsive font size */
+    text-align: center;
+    z-index: 4;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 80vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    display: grid;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 80%;
+    /* Responsive width */
+    height: 50vh;
+    /* Responsive height */
+    position: relative;
+    margin: auto;
+    /* Center align horizontally */
+}
+
+
+.slider {
+    display: flex;
+    width: calc(250px * calc(var(--pic-count)*2));
+    transition: transform 1s ease-in-out;
+    animation: scroll 40s linear infinite;
+}
+
+.slide {
+    height: 50vh;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide img:hover {
+    transform: translateZ(20px);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px*var(--pic-count)));
+    }
+
+}
+
+.text {
+    position: absolute;
+    top: 5%;
+    left: -5%;
+    z-index: 1;
+    width: 100%;
+}
+
+.text h2 {
+    font-size: 18vw;
+    /* Responsive font size */
+}
+
+.posterTextContainer .posterText {
+    font-size: 21vw;
+}
+
+.posterTextContainer {
+    position: absolute;
+    top: 20%;
+    left: -8%;
+    z-index: 1;
+}
+
+.UItext .UIUXText {
+    font-size: 26vw;
+    width: 100%;
+}
+
+.UItext {
+    position: absolute;
+    top: 15%;
+    left: -2%;
+    z-index: 1;
+}
+
+.lexend-giga {
+    font-family: "Lexend Giga", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+@media (max-width: 768px) {
+
+    h2,
+    h3 {
+        font-size: 6vw;
+        z-index: 4;
+    }
+
+    .posterTextContainer .posterText {
+        font-size: 18vw;
+    }
+
+    .posterTextContainer {
+        top: 35%;
+        left: -4%;
+    }
+
+    .text {
+        top: 33%;
+    }s
+    .UItext {
+        top: 33%;
+    }
+
+
+}
