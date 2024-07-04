@@ -31,12 +31,16 @@ function show() {
     "../Assets/p4.jpg",
     "../Assets/p5.jpg",
     "../Assets/p6.jpg",
+    "../Assets/p7.jpg",
+    "../Assets/p8.jpg",
     "../Assets/p1.jpg",
     "../Assets/p2.jpg",
     "../Assets/p3.jpg",
     "../Assets/p4.jpg",
     "../Assets/p5.jpg",
     "../Assets/p6.jpg",
+    "../Assets/p7.jpg",
+    "../Assets/p8.jpg",
   ];
 
   const slider = document.querySelector(".slider");
